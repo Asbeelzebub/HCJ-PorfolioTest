@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta
+      name="viewport"
+      content="width= device-width,
+    , initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <!--------------Desktop Mode--------------->
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img src="assets/asbeel-logo.png" alt="asbeelLogo" />
+        <h1 onclick="location.href='#'">Asbeel</h1>
+      </div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--------------Sandwich Mode--------------->
+    <nav id="sandwich-nav">
+      <div class="logo"><h1 onclick="location.href='#'">Asbeel</h1></div>
+      <div class="sandwich-menu">
+        <div class="sandwich-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!--------------Page Section--------------->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.png" alt="Profile Picture" srcset="" />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ricardo Gajasan</h1>
+        <p class="section__text__p2">Web Developer</p>
+
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/RicardoEGajasanJr.pdf')">
+            Download CV 📃
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Me 💜
+          </button>
+        </div>
+
+        <div class="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/ricardoegajasanjr/')" />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Asbeelzebub')" />
+
+          <img
+            src="./assets/facebook.png"
+            alt="My Facebook profile"
+            class="icon"
+            onclick="window.open('https://facebool.com/andong090497')" />
+        </div>
+      </div>
+    </section>
+    <!--------------ABOUT Section--------------->
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="/assets/about-pic.png" alt="Profile Picture" class="about-pic" />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>1 year <br />Web Development</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>BSIT Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis reprehenderit et
+              laborum, rem, dolore eum quod voluptate exercitationem nobis, nihil esse debitis
+              maxime facere minus sint delectus velit in eos quo officiis explicabo deleniti
+              dignissimos. Eligendi illum libero dolorum cum laboriosam corrupti quidem, reiciendis
+              ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'" />
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
