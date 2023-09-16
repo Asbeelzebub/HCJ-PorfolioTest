@@ -7,6 +7,7 @@
 
 body {
   font-family: "Titillium Web", sans-serif;
+  background-color: #fbfbfe;
 }
 
 html {
@@ -33,7 +34,9 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 11vh;
+  background-color: #fbfbfe;
+  padding: 5px;
 }
 
 .nav-links {
@@ -43,13 +46,13 @@ nav {
 }
 
 a {
-  color: #191825;
+  color: #2b2730;
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: #865dff;
+  color: #794cff;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: #794cff;
@@ -59,9 +62,9 @@ a:hover {
   display: flex;
   font-size: 2rem;
   font-family: "Titillium Web", sans-serif;
-  -webkit-text-fill-color: #191919;
+  -webkit-text-fill-color: #2b2730;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: #2b2730;
 }
 
 .logo img {
@@ -74,7 +77,7 @@ a:hover {
   cursor: default;
   -webkit-text-fill-color: #794cff;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: #2b2730;
 }
 
 /* SANDWICH MENU */
@@ -100,7 +103,7 @@ a:hover {
 .sandwich-icon span {
   height: 2px;
   width: 100%;
-  background-color: #191825;
+  background-color: #2b2730;
   transition: all 0.3 ease-in-out;
 }
 .menu-links {
@@ -119,7 +122,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: #191825;
+  color: #2b2730;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -250,7 +253,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: #191825 0.1rem solid;
+  border: #2b2730 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -259,13 +262,13 @@ section {
 }
 
 .btn-color-1 {
-  background: #191825;
+  background: #2b2730;
   color: white;
 }
 .btn-color-2:hover {
   background: #794cff;
   color: white;
-  border: #191825 0.1rem solid;
+  border: #2b2730 0.1rem solid;
 }
 
 .btn-color-1:hover {
@@ -278,7 +281,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: #191825 0.1rem solid;
+  border: #2b2730 0.1rem solid;
 }
 
 .btn-container {
@@ -291,6 +294,9 @@ section {
   position: relative;
 }
 
+.about .icon:hover {
+  cursor: default;
+}
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -320,7 +326,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: #fbfbfe;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -336,4 +342,43 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: #2b2730;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon:hover {
+  cursor: default;
 }
