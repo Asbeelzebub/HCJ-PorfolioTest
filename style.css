@@ -236,6 +236,62 @@ section {
 
 /* BUTTONS */
 
+label {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+}
+
+.sun {
+  position: absolute;
+  font-size: 1em;
+  color: #f2f2f2;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.555));
+  transform: scale(0);
+  transition: 1s ease;
+}
+
+input:checked ~ .sun {
+  transform: scale(1) rotate(360deg);
+}
+
+.moon {
+  font-size: 1em;
+  color: #794cff;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.555));
+  transition: 1s ease;
+}
+
+input:checked ~ .moon {
+  transform: rotate(360deg) scale(0);
+}
+
+.toggle {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #2b2b2b;
+  border-radius: 50%;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transition: 1s;
+}
+
+input:checked ~ .toggle {
+  background: #f8f8f8;
+}
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -606,8 +662,6 @@ footer p {
 
 /* BUTTONS DM */
 
-/* BUTTONS */
-
 .dark-mode .btn-container {
   display: flex;
   justify-content: center;
@@ -654,4 +708,32 @@ footer p {
 
 .dark-mode .btn-container {
   gap: 1rem;
+}
+
+/* About me DM */
+
+.dark-mode .details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: #2b2730;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: #794cff;
+  text-align: center;
+}
+
+.dark-mode h2 {
+  color: #f2f2f2;
+}
+
+.dark-mode .project-btn {
+  color: white;
+  background-color: #794cff;
+  border-color: #2b2730;
+}
+
+.dark-mode .project-btn:hover {
+  color: black;
+  background-color: #f2f2f2;
+  border-color: #794cff;
 }
